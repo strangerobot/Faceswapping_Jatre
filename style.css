@@ -2,14 +2,10 @@
    /* CSS comes here */
    #video {
        border: 1px solid black;
-       width: 320px;
-       height: 240px;
    }
 
    #photo {
        border: 1px solid black;
-       width: 320px;
-       height: 240px;
    }
 
    #canvas {
