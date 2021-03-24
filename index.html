@@ -1,0 +1,66 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <script src="libraries/ml5.min.js"></script>
+  <script src="libraries/jquery.min.js"></script>
+  <script src="libraries/p5.dom.min.js"></script>
+  <script src="libraries/objectdetect.min.js"></script>
+  <script
+    src="libraries/objectdetect.frontalface.min.js"></script>
+
+
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+
+  <script language="javascript" type="text/javascript" src="faceswap_p5.js"></script>
+  <script language="javascript" type="text/javascript" src="camera_code.js"></script>
+  <script language="javascript" type="text/javascript" src="imagepicker/image-picker.js"></script>
+
+
+
+  <!-- This line removes any default padding and style.
+       You might only need one of these values set. -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="imagepicker/image-picker.css">
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contentarea">
+    <h1>
+      Using Javascript to capture Photo
+    </h1>
+    <div class="camera">
+      <video id="video">Video stream not available.</video>
+    </div>
+    <div><button id="startbutton">Take photo</button></div>
+
+    <canvas id="canvas"></canvas>
+    <select class="image-picker" onchange=" selectimage(this.value)">
+      <div class="thumbnail">
+        <option data-img-src="/images/1.jpg" data-img-class="first" data-img-alt="Page 1" value="images/1.jpg"> Page 1
+        </option>
+      </div>
+
+      <div class="thumbnail">
+        <option data-img-src="/images/2.jpg" data-img-alt="Page 2" value="images/2.jpg"> Page 2 </option>
+      </div>
+
+      <div class="thumbnail">
+        <option data-img-src="/images/3.jpg" data-img-alt="Page 3" value="images/3.jpg"> Page 3 </option>
+      </div>
+    </select>
+
+  </div>
+<div><button onclick="downloadImage()">Download</button></div>
+</body>
+
+</html>
