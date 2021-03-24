@@ -58,14 +58,19 @@ function takepicture() {
         canvas.height = height;
         context.drawImage(video, 0, 0, width, height);
         var data = canvas.toDataURL('image/png');
-        var scalefac=w/width;
+      //  var scalefac=w/width;
 
 
         //transfer image to faceswap_p5
-        clickedpicture = loadImage(data,  function imageloaded(){
+    //    clickedpicture = loadImage(data,  function imageloaded(){
+    clickedpicture = loadImage('images/vertical.jpg',  function imageloaded(){
+      console.log(clickedpicture.width,"width");
+        console.log(clickedpicture.height,"height");
 
-
-          clickedpicture.resize(width*scalefac, height*scalefac)
+        var scalefac=w/clickedpicture.width;
+          clickedpicture.resize(clickedpicture.width*scalefac, clickedpicture.height*scalefac)
+          console.log(clickedpicture.width,"width");
+            console.log(clickedpicture.height,"height");
               change=true;
               console.log(clickedpicture);
         });
