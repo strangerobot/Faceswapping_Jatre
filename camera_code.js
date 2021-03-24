@@ -62,8 +62,7 @@ function takepicture() {
 
 
         //transfer image to faceswap_p5
-    //    clickedpicture = loadImage(data,  function imageloaded(){
-    clickedpicture = loadImage('images/vertical.jpg',  function imageloaded(){
+    clickedpicture = loadImage(data,  function imageloaded(){
       console.log(clickedpicture.width,"width");
         console.log(clickedpicture.height,"height");
 
