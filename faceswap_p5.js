@@ -7,7 +7,7 @@ let faceapi,faceapi2;
 let face1=[[]],face2=[[]];
 var defaultimage="images/1.jpg";
 //test
-var w = 640;
+var w = screen.width;
 //let faceapi,faceapi2;
 
 
